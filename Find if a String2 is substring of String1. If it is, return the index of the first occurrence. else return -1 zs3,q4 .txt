@@ -1,0 +1,51 @@
+public class kishore{
+    public static void main(String args[])
+    {
+        String str1="testing12";
+        String str2="1234";
+        char a[]=str1.toCharArray();
+        char b[]=str2.toCharArray();
+        int x=3;
+        int flag=0;
+        int flag2=0;
+        int c=0;
+        int z=0;
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=i;j<=x;j++)
+            {
+               if(a[j]==b[z])
+               {
+                   flag=1;
+                   z++;
+               }
+               else
+               {
+                   flag=0;
+                   z++;
+               }
+            }
+            if(z!=4)
+            {
+                flag=0;
+            }
+            
+            if(x<8)
+            {
+                x++;
+            }
+           c=i; 
+            
+        z=0;
+        if(flag==1)
+        {
+            System.out.println(c);
+            flag2=1;
+        }
+        }
+        if(flag2==0)
+        {
+          System.out.println("-1");  
+        }
+    }
+}

@@ -1,0 +1,40 @@
+import java.util.*;
+import java.math.*;
+import java.io.*;
+public class kishore{
+    public static void main(String args[])
+    {
+        int a[]={10,36,54,89,12};
+        int b[]=new int[5];
+        int count=0;
+        int d=0;
+        for(int i=0;i<5;i++)
+        {
+        
+            double root=Math.sqrt(a[i]);
+            if(root==Math.ceil(root))
+            {
+                count+=5;
+            }
+            d=a[i];
+            if((d%4)==0)
+            {
+                if((d%6)==0)
+                {
+                count+=4;
+                }
+            }
+            if((a[i]%2)==0)
+            {
+                count+=3;
+            }
+            b[i]=count;
+            count=0;
+        }
+    
+   for(int i=0;i<5;i++)
+    {
+        System.out.println(b[i]);
+    }
+}
+}

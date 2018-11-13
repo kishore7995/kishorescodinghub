@@ -1,0 +1,31 @@
+class Kishore{
+  public static void main(String args[])
+  {
+    String str="999";
+    String a[]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+                String b[]={"","ten","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninty"};
+                            int len=str.length();
+                            if(len==1)
+                            {
+                              char c=str.charAt(0);
+                              int ones=(int)c-48;
+                              System.out.println(a[ones]);
+                            }
+                            if(len==3)
+                            {
+                                char c=str.charAt(0);
+                                int ones=(int)c-48;
+                                char d=str.charAt(1);
+                                int tw=(int)d-48;
+                                char e=str.charAt(2);
+                                int the=(int)e-48;
+                                System.out.println(a[ones]+"hundred"+b[tw]+a[the]);
+                                
+                                
+                                
+                                
+                                
+                            }
+                            
+                           }
+               }

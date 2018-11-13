@@ -1,0 +1,33 @@
+public class kishore{
+    public static void main(String args[])
+    {
+        int a[]={4,4,4,4,4,4,4};
+        int count1=0;
+        int count2=6;
+        int count3=0;
+        int flag=1;
+        for(int i=0;i<7;i++)
+        {
+        for(int j=0;j<7;j++)
+        {
+           
+            for(int x=count1;x<=count2;x++)
+            {
+                 a[x]=a[j]-count3;
+                 flag=0;
+            }
+            
+        }
+        
+        count1++;
+        count2--;
+        count3++;
+        for(int c=0;c<7;c++)
+        {
+            System.out.print(a[c]);
+        }
+        System.out.println();
+    }
+    }
+    
+}

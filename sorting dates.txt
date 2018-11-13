@@ -1,0 +1,19 @@
+public class kishore{
+    public static void main(String args[])
+    {
+          String s="07/08/1995";
+          String s1="08/09/2005";
+          String x=s.substring(6);
+          int c=Integer.parseInt(x);
+          String y=s1.substring(6);
+          int v=Integer.parseInt(y);
+          if(v>c)
+          {
+              System.out.println(s);
+          }
+          else
+          {
+              System.out.println(s1);
+          }
+    }
+}

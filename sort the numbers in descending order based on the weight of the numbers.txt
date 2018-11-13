@@ -1,0 +1,45 @@
+public class kishore{
+    public static void main(String args[])
+    {
+        int a[]={8,2,3,12,16};
+        int count=0;
+        int b[]=new int[5];
+        for(int i=0;i<5;i++)
+        {
+           for(int j=1;j<a[i];j++)
+           {
+               if((a[i]%j)==0)
+               {
+                   count++;
+               }
+           }
+           b[i]=count;
+           count=0;
+        }
+        int temp1=0;
+        int temp2=0;
+        for(int i=0;i<5;i++)
+        {
+            for(int j=i+1;j<5;j++)
+            {
+                if(b[i]<b[j])
+                {
+                    temp1=b[i];
+                    b[i]=b[j];
+                    b[j]=temp1;
+                    temp2=a[i];
+                    a[i]=a[j];
+                    a[j]=temp2;
+                    
+                }
+            }
+        }
+        for(int i=0;i<5;i++)
+        {
+           
+                System.out.println(a[i]);
+            
+        }
+        
+    }
+}

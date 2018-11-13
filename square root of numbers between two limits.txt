@@ -1,0 +1,14 @@
+import java.math.*;
+public class kishore{
+    public static void main(String args[])
+    {
+        for (int i=20;i<=100;i++)
+        {
+            double a=Math.sqrt(i);
+            if(a==Math.ceil(a))
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
