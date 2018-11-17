@@ -18,7 +18,8 @@ public class kishore{
                     a=(x-48)*10+(s-48);
                     flag=2;
                     i++;
-               }
+               }///kishore aravanan
+
                else{
                 a=x-48;
                flag=1;
